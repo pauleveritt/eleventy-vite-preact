@@ -1,12 +1,35 @@
 {
   "compilerOptions": {
     "target": "es2021",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "jsx": "react",                                      /* Specify what JSX code is generated. */
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+
     "jsxFactory": "h",                                   /* Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h' */
-    "module": "commonjs",                                /* Specify what module code is generated. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+    "jsxFragmentFactory": "h.Fragment",
+    "module": "ESNext",                                /* Specify what module code is generated. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-    "strict": true,                                      /* Enable all strict type-checking options. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+
+
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "_includes",
+    "public",
+    "node_modules/vitest/globals.d.ts",
+    "sites/*/index*.tsx",
+    "vite.config.ts"
+  ]
 }
