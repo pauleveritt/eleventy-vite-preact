@@ -1,5 +1,5 @@
 // noinspection ES6UnusedImports
-import { h } from "preact";
+import h from "vhtml";
 
 export const data = {
   title: "Eleventy 11ty.js Extensions",
