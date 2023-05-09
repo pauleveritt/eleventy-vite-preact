@@ -1,0 +1,31 @@
+{
+  "name": "eleventy-vite-preact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "": "vite",
+    "dev": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js --serve",
+    "build": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js"
+  },
+  "dependencies": {
+    "preact": "^10.11.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.4.0",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "@testing-library/dom": "^9.2.0",
+    "esbuild-register": "^3.3.2",
+    "happy-dom": "^9.10.8",
+    "preact": "^10.13.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.4",
+    "vitest": "^0.31.0",
+    "vhtml": "^2.2.0"
+  },
+  "volta": {
+    "node": "19.6.0"
+  }
+}
